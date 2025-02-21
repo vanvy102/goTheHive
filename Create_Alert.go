@@ -24,7 +24,7 @@ func main() {
 	fmt.Println("--------------------------")
 	alert, err := hive.CreateAlert(
 		artifacts,     // Artifacts
-		"ASJDLASKLDJ", // Title
+		"helo", // Title
 		"HELO",        // Description
 		1,             // TLP
 		1,             // Severity
