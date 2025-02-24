@@ -2,14 +2,15 @@ package main
 
 import (
 	"fmt"
-	"github.com/bitly/go-simplejson"
-	"github.com/frikky/hive4go"
-	"github.com/satori/go.uuid"
 	"os"
+
+	"github.com/bitly/go-simplejson"
+	thehive "github.com/frikky/hive4go"
+	uuid "github.com/satori/go.uuid"
 )
 
 func main() {
-	hive := thehive.CreateLogin("http://localhost:9000/thehive", "qqsYzkVEoEA/FHRW7ecB4llNOKIeEPm+", false)
+	hive := thehive.CreateLogin("http://localhost:9000/thehive", "dxA/NEvjl/hjcvv5rQ9aG/juLExgrHn6", false)
 
 	// Missing file
 	artifacts := []thehive.Artifact{
@@ -23,17 +24,17 @@ func main() {
 	fmt.Println("Create Alert")
 	fmt.Println("--------------------------")
 	alert, err := hive.CreateAlert(
-		artifacts,     // Artifacts
-		"helo", // Title
-		"HELO",        // Description
-		1,             // TLP
-		1,             // Severity
+		artifacts,                     // Artifacts
+		"helo",                        // Title
+		"HELO",                        // Description
+		1,                             // TLP
+		1,                             // Severity
 		[]string{"hive4go", "sample"}, // Tags
-		"SIEM",         // Type
-		"Carbon black", // Source
-		sourceRef,      // SourceRef
+		"SIEM",                        // Type
+		"Carbon black",                // Source
+		sourceRef,                     // SourceRef
 		"20250219",
-		"New",          // Status (ví dụ: "New", "InProgress", "Closed")
+		"New", // Status (ví dụ: "New", "InProgress", "Closed")
 	)
 
 	jsonData, err := simplejson.NewJson(alert.Raw)
