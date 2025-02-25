@@ -7,7 +7,7 @@ Hive4Go là một thư viện Go giúp tương tác với API của TheHive, m�
 Để sử dụng thư viện Hive4Go, trước tiên bạn cần cài đặt Go và chạy lệnh sau để tải thư viện:
 
 ```sh
-go get github.com/frikky/hive4go
+go get github.com/Duongdot/hive4go
 ```
 
 Ngoài ra, bạn cũng cần đảm bảo các dependencies sau được cài đặt:
