@@ -3,13 +3,14 @@ package main
 import (
 	"fmt"
 	"os"
+
 	"github.com/bitly/go-simplejson"
-	"github.com/frikky/hive4go"
+	thehive "github.com/frikky/hive4go"
 )
 
-func main() {
+func GetAlert() {
 	// Kết nối đến TheHive
-	hive := thehive.CreateLogin("http://localhost:9000/thehive", "qqsYzkVEoEA/FHRW7ecB4llNOKIeEPm+", false)
+	hive := thehive.CreateLogin("http://localhost:9000/thehive", "dxA/NEvjl/hjcvv5rQ9aG/juLExgrHn6", false)
 
 	// Lấy log của task từ TheHive
 	alertID := "~32800" // Thay bằng Alert ID thực tế
