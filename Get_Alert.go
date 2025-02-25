@@ -8,7 +8,7 @@ import (
 	thehive "github.com/frikky/hive4go"
 )
 
-func main() {
+func GetAlert() {
 	// Kết nối đến TheHive
 	hive := thehive.CreateLogin("http://localhost:9000/thehive", "dxA/NEvjl/hjcvv5rQ9aG/juLExgrHn6", false)
 

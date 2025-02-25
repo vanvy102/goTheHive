@@ -8,7 +8,7 @@ import (
 	"github.com/frikky/hive4go"
 )
 
-func main() {
+func CreateTask() {
 	// Kết nối TheHive
 	hive := thehive.CreateLogin("http://localhost:9000/thehive", "qqsYzkVEoEA/FHRW7ecB4llNOKIeEPm+", false)
 

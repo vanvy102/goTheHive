@@ -1,0 +1,21 @@
+{
+    "title": "string",
+    "description": "string",
+    "severity": 1,
+    "tags": [
+        "red"
+    ],
+    "flag": true,
+    "tlp": 1,
+    "pap": 1,
+    "tasks": [
+        "string",
+        "group",
+        1640000000000,
+        1640000000000,
+        0,
+        1640000000000,
+        "assignee",
+        true
+    ]
+}
